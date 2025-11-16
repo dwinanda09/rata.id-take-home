@@ -1,0 +1,24 @@
+# Example GraphQL queries for testing autocomplete
+
+query GetOrderStats {
+  orderStats {
+    totalOrders
+    totalAmount
+    averageOrderValue
+  }
+}
+
+query GetOrder {
+  order(id: "1") {
+    id
+    orderNumber
+    status
+    pricing {
+      totalAmount
+      currency
+    }
+  }
+}
+
+# Start typing here to test autocomplete:
+# query Get

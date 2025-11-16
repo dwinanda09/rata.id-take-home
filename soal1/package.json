@@ -1,0 +1,16 @@
+{
+  "name": "typescript-fundamentals",
+  "version": "1.0.0",
+  "description": "TypeScript fundamentals demonstration",
+  "main": "typescript-examples.js",
+  "scripts": {
+    "build": "tsc typescript-examples.ts",
+    "start": "node typescript-examples.js",
+    "dev": "ts-node typescript-examples.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^18.0.0"
+  }
+}

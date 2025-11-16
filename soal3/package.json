@@ -1,0 +1,25 @@
+{
+  "name": "banking-system-oop",
+  "version": "1.0.0",
+  "description": "Object-Oriented Banking System demonstrating OOP principles",
+  "main": "banking-system.js",
+  "scripts": {
+    "build": "tsc banking-system.ts",
+    "start": "node banking-system.js",
+    "dev": "ts-node banking-system.ts",
+    "demo": "ts-node banking-system.ts"
+  },
+  "keywords": [
+    "oop",
+    "typescript",
+    "banking",
+    "inheritance",
+    "polymorphism",
+    "encapsulation"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^18.0.0"
+  }
+}

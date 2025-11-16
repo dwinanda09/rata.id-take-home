@@ -1,0 +1,37 @@
+{
+  "name": "graphql-ecommerce-frontend",
+  "version": "1.0.0",
+  "description": "React frontend for GraphQL e-commerce application",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.0",
+    "vite": "^4.1.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "dev": "vite"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

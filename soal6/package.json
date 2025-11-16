@@ -1,0 +1,41 @@
+{
+  "name": "graphql-fullstack-ecommerce",
+  "version": "1.0.0",
+  "description": "Complete fullstack GraphQL e-commerce application with React frontend",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc && npm run build:client",
+    "build:client": "cd client && npm run build",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\" \"npm run mock:catalog\"",
+    "dev:server": "ts-node src/server.ts",
+    "dev:client": "cd client && npm start",
+    "mock:catalog": "ts-node src/mockServices/catalogMockServer.ts",
+    "install:all": "npm install && cd client && npm install",
+    "proto": "grpc_tools_node_protoc --js_out=import_style=commonjs,binary:./src/generated --grpc_out=grpc_js:./src/generated --plugin=protoc-gen-grpc=./node_modules/.bin/grpc_tools_node_protoc_plugin -I ./proto ./proto/*.proto"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.0",
+    "@grpc/proto-loader": "^0.7.0",
+    "apollo-server-express": "^3.12.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "graphql": "^16.6.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-tag": "^2.12.6",
+    "subscriptions-transport-ws": "^0.11.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@graphql-tools/schema": "^9.0.0",
+    "@types/cors": "^2.8.0",
+    "@types/express": "^4.17.0",
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "concurrently": "^7.6.0",
+    "grpc-tools": "^1.12.4",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
